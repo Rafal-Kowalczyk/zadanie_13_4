@@ -1,5 +1,5 @@
 ﻿var os = require('os');
-var osTime = require('./OStime');
+var OStime = require('./OStime');
 
 function getOSinfo() {
 	var type = os.type();	
@@ -11,7 +11,7 @@ function getOSinfo() {
 	var release = os.release();
 	var cpu = os.cpus()[0].model;
 	var userInfo = os.userInfo();
-	var uptime = osTime.print();
+	var uptime = OStime.print();
 	
 	console.log('System: ', type);
 	console.log('Release: ', release);
